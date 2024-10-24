@@ -4,14 +4,19 @@ import Icon from "../atoms/Icon";
 
 const SKILLS = [
   {
-    icon: "react",
+    icon: "web",
     skillName: "Web Development",
     description:
       "You will receive a customized plan for your fitness journey, and lots of support.",
   },
-  { icon: "vue", skillName: "Vue", description: "I love Vue" },
-  { icon: "angular", skillName: "Angular", description: "I love Angular" },
-  { icon: "svelte", skillName: "Svelte", description: "I love Svelte" },
+  {
+    icon: "mobile",
+    skillName: "Mobile Development",
+    description:
+      "You will receive a customized plan for your fitness journey, and lots of support.",
+  },
+  { icon: "web", skillName: "Angular", description: "I love Angular" },
+  { icon: "web", skillName: "Svelte", description: "I love Svelte" },
 ];
 
 export default function Skills() {
