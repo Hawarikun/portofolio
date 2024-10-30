@@ -1,5 +1,5 @@
 import Avatar from "../atoms/images/Avatar";
-import logo from "../../assets/profile.png";
+import logo from "../../assets/profile.jpg";
 import Icon from "../atoms/Icon";
 import Skills from "../organisms/Skills";
 //
