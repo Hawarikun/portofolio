@@ -5,7 +5,7 @@ function SearchInput() {
         type="search"
         name="search-form"
         id="search-form"
-        className="search-input w-full text-base px-6 py-4 rounded-xl bg-black bg-opacity-80 text-gray-400"
+        className="search-input w-full text-base px-6 py-4 rounded-xl bg-black bg-opacity-80 text-gray-400 mb-8"
         //   onChange={(e) => setSearchQuery(e.target.value)}
         placeholder="Type your favorite snippet here, hehehe ....."
       />

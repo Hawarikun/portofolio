@@ -22,7 +22,7 @@ export default function ListTile() {
 
   return (
     <>
-      <div className="flex flex-col gap-y-8 mb-8">
+      <div className="flex flex-col gap-y-8">
         {projects.slice(0, limit).map((project, index) => (
           <Tile
             key={index}

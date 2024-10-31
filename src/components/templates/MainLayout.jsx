@@ -14,10 +14,10 @@ export default function MainLayout() {
       <Activity />
       <div className="text-5xl font-bold my-12">Featured Project</div>
       <ListTile />
-      <SeeMore />
+      <SeeMore path={"portofolio"} />
       <div className="text-5xl font-bold my-12">Code Snippet</div>
-      <CodeSnippet />
-      <SeeMore />
+      <CodeSnippet limit={4} />
+      <SeeMore path="codeSnippet" />
       <Footer />
     </div>
   );
