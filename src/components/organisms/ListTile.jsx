@@ -1,4 +1,3 @@
-import SeeMore from "../atoms/buttons/SeeMore";
 import Tile from "../moleculs/Tile";
 
 const projects = [
@@ -23,7 +22,6 @@ export default function ListTile() {
 
   return (
     <>
-      <div className="text-5xl font-bold my-12">Featured Project</div>
       <div className="flex flex-col gap-y-8 mb-8">
         {projects.slice(0, limit).map((project, index) => (
           <Tile
@@ -35,7 +33,6 @@ export default function ListTile() {
           />
         ))}
       </div>
-      <SeeMore />
     </>
   );
 }

@@ -13,7 +13,7 @@ export default function Navbar() {
           </div>
           <ul className="hidden space-x-12 text-md font-medium md:flex ">
             <NavbarButton nameRoute={""} name={"Home"} />
-            <NavbarButton nameRoute={""} name={"Portopolio"} />
+            <NavbarButton nameRoute={"portofolio"} name={"Portofolio"} />
             <NavbarButton nameRoute={"codeSnippet"} name={"CodeSnippet"} />
             {/* <NavbarButton nameRoute={""} name={"Aboute"} /> */}
           </ul>

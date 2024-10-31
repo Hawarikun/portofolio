@@ -12,7 +12,9 @@ export default function MainLayout() {
       <Navbar />
       <Hero />
       <Activity />
+      <div className="text-5xl font-bold my-12">Featured Project</div>
       <ListTile />
+      <SeeMore />
       <div className="text-5xl font-bold my-12">Code Snippet</div>
       <CodeSnippet />
       <SeeMore />
