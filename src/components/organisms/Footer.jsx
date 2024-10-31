@@ -6,9 +6,15 @@ export default function Footer() {
       {/* <div className="text-3xl font-bold my-12">Footer</div> */}
       <div className="text-md font-semibold mt-12">Reach me out</div>
       <div className="flex flex-row justify-center items-center my-8 gap-x-8">
-        <Icon name={"linkedIn"} />
-        <Icon name={"github"} />
-        <Icon name={"instagram"} />
+        <a href="https://www.linkedin.com/in/ciptarakanurhisamhawari/">
+          <Icon name="linkedIn" />
+        </a>
+        <a href="https://github.com/Hawarikun">
+          <Icon name="github" />
+        </a>
+        <a href="https://www.instagram.com/">
+          <Icon name="instagram" />
+        </a>
       </div>
     </div>
   );

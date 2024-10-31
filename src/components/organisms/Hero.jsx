@@ -1,8 +1,6 @@
 import Avatar from "../atoms/images/Avatar";
 import logo from "../../assets/profile.jpg";
 import Icon from "../atoms/Icon";
-import Skills from "../organisms/Skills";
-//
 
 export default function Hero() {
   return (
@@ -27,22 +25,17 @@ export default function Hero() {
         <div className="flex flex-col gap-y-4 justify-center xl:w-[50%]">
           <h1 className="text-3xl font-bold ">Lest Connect</h1>
           <div className="flex flex-row gap-x-4 ">
-            <Icon name="linkedIn" />
-            <Icon name="github" />
-            <Icon name="instagram" />
+            <a href="https://www.linkedin.com/in/ciptarakanurhisamhawari/">
+              <Icon name="linkedIn" />
+            </a>
+            <a href="https://github.com/Hawarikun">
+              <Icon name="github" />
+            </a>
+            <a href="https://www.instagram.com/">
+              <Icon name="instagram" />
+            </a>
           </div>
         </div>
-      </div>
-      <div className="flex flex-row gap-x-10">
-        <div className="flex flex-col justify-center gap-y-4 w-[45%]">
-          <h1 className="text-3xl font-bold ">What I do</h1>
-          <p className="text-md">
-            Build and maintain websites, frontend dev also have a mentorship
-            called MOFON. My motto is Beauty and function in equal measure as
-            priority.
-          </p>
-        </div>
-        <Skills />
       </div>
     </div>
   );

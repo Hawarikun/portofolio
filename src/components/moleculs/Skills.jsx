@@ -1,5 +1,4 @@
 import { useState } from "react";
-import SkillCard from "../moleculs/SkillCard";
 import Icon from "../atoms/Icon";
 
 const SKILLS = [
@@ -19,7 +18,31 @@ const SKILLS = [
   { icon: "web", skillName: "Svelte", description: "I love Svelte" },
 ];
 
-export default function Skills() {
+// eslint-disable-next-line react/prop-types
+function CircleIcon({ name, width, height }) {
+  return (
+    <div className="inline-block rounded-full ring-2 ring-blue-400 p-4 bg-black bg-opacity-800">
+      <Icon name={name} width={width} height={height} colorHex="#FFFFFF" />
+    </div>
+  );
+}
+
+// eslint-disable-next-line react/prop-types
+function SkillCard({ icon = "react", skillName, description }) {
+  return (
+    <div className="flex relative justify-center">
+      <div className="absolute -top-7 z-10 left-1/2 transform -translate-x-1/2 ">
+        <CircleIcon name={icon} width={25} height={25} />
+      </div>
+      <div className="flex flex-col items-center w-60 h-40 py-12 px-8 rounded-md shadow-lg bg-black bg-opacity-800">
+        <h1 className="text-sm font-bold text-white">{skillName}</h1>
+        <p className="text-xs text-center mt-2 text-gray-400">{description}</p>
+      </div>
+    </div>
+  );
+}
+
+function Skills() {
   const [currentPage, setCurrentPage] = useState(0);
   const itemsPerPage = 2; // Number of items per page
   const totalPages = Math.ceil(SKILLS.length / itemsPerPage);
@@ -70,3 +93,5 @@ export default function Skills() {
     </div>
   );
 }
+
+export default Skills;

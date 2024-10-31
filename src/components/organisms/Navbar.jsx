@@ -1,16 +1,21 @@
+import NavbarButton from "../atoms/buttons/Navbarbutton";
+import { Link } from "react-router-dom";
+
 export default function Navbar() {
   return (
     <div className="bg-white  w-full">
-      <div className="container border-b-2 py-8 ">
+      <div className="container border-b-2 py-4 ">
         <div className="flex items-center justify-between ">
           <div className="hidden md:block ">
-            <h1 className="text-xl font-semibold">Hawari</h1>
+            <Link to={"/"}>
+              <h1 className="text-xl font-semibold cursor-pointer">Hawari</h1>
+            </Link>
           </div>
           <ul className="hidden space-x-12 text-md font-medium md:flex ">
-            <li>Home</li>
-            <li>portofolio</li>
-            <li>Snippet</li>
-            <li>About</li>
+            <NavbarButton nameRoute={""} name={"Home"} />
+            <NavbarButton nameRoute={""} name={"Portopolio"} />
+            <NavbarButton nameRoute={"codeSnippet"} name={"CodeSnippet"} />
+            {/* <NavbarButton nameRoute={""} name={"Aboute"} /> */}
           </ul>
           <div className="md:hidden">
             <button

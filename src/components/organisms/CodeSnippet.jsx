@@ -1,5 +1,4 @@
 import CodeCard from "../moleculs/CodeCrard";
-import SeeMore from "../atoms/buttons/SeeMore";
 
 export default function CodeSnippet() {
   const codes = [
@@ -20,13 +19,11 @@ export default function CodeSnippet() {
   ];
   return (
     <>
-      <div className="text-5xl font-bold my-12">Code Snippet</div>
       <div className=" grid grid-cols-2 gap-12 my-8">
         {codes.map((code, index) => (
           <CodeCard key={index} {...code} />
         ))}
       </div>
-      <SeeMore />
     </>
   );
 }
